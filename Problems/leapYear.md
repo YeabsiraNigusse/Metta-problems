@@ -11,6 +11,7 @@ Some examples:
 2000 was a leap year!
 
 Instructions
+
 Your task is to determine whether a given year is a leap year.
 
 To complete this exercise you need to implement the function isLeapYear that takes a year and determines whether it is a leap year.

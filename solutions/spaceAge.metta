@@ -34,16 +34,16 @@
            ($earth-years (/ $seconds (earthYearInSeconds)))  
            ($planet-years (/ $earth-years (orbitalPeriod $planet)))  
          )
-         ($planet-years years old) ; Return the calculated age on the planet
+         $planet-years  ; Return the calculated age on the planet
    )
 )
 
 ; Test cases
-! (ageOn Earth 1000000000)   ; output: 31.69 years old
-! (ageOn Mercury 1000000000) ; output:131.57 years old
-! (ageOn Venus 1000000000)   ; output: 51.51 years old
-! (ageOn Mars 1000000000)    ; output: 16.85  years old
-! (ageOn Jupiter 1000000000) ; output: 2.67 years old
-! (ageOn Saturn 1000000000)  ; output: 1.08 years old
-! (ageOn Uranus 1000000000)  ; output: 0.38 years old
-! (ageOn Neptune 1000000000) ; output: 0.19 years old
+! (ageOn Earth 1000000000)   ; output: 31.69
+! (ageOn Mercury 1000000000) ; output:131.57
+! (ageOn Venus 1000000000)   ; output: 51.51
+! (ageOn Mars 1000000000)    ; output: 16.85  
+! (ageOn Jupiter 1000000000) ; output: 2.67 
+! (ageOn Saturn 1000000000)  ; output: 1.08 
+! (ageOn Uranus 1000000000)  ; output: 0.38 
+! (ageOn Neptune 1000000000) ; output: 0.19 

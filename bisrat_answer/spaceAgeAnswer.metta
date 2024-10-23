@@ -24,4 +24,4 @@
 
 ; Example usage:
 ! (ageOnPlanet Earth 31557600)  ; Expected output is 1 Earth year
-! (ageOnPlanet Venus 31557600)  ; Expected output is 1.6254948859817744]
+! (ageOnPlanet Venus 31557600)  ; Expected output is 1.6254948859817744

@@ -8,5 +8,5 @@
                  (false))))
 )
 
-!(leap-year 1996)
 !(leap-year 2002)
+!(leap-year 1996)

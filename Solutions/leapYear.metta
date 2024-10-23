@@ -1,0 +1,12 @@
+(= (leap-year $year)
+    (if (== (% $year 400) 0)
+        (false)
+        (if (== ( % $year 100) 0)
+            (false)
+            (if (== ( % $year 4) 0)
+                 (true)
+                 (false))))
+)
+
+!(leap-year 2002)
+!(leap-year 1996)

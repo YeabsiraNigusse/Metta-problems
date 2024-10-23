@@ -1,0 +1,36 @@
+(OrbitalPeriod Mercury 0.2408467)
+(OrbitalPeriod Venus 0.61519726)
+(OrbitalPeriod Earth 1.0)
+(OrbitalPeriod Mars 1.8808158)
+(OrbitalPeriod Jupiter 11.862615)
+(OrbitalPeriod Saturn 29.447498)
+(OrbitalPeriod Uranus 84.016846)
+(OrbitalPeriod Neptune 164.79132)
+
+(: Planet Mercury)
+(: Planet Venus)
+(: Planet Earth)
+(: Planet Mars)
+(: Planet Jupiter)
+(: Planet Saturn)
+(: Planet Uranus)
+(: Planet Neptune)
+(: ageOn (-> Planet Number Number))
+
+
+(= (ageOn $planet $seconds)
+   (match &self (OrbitalPeriod $planet $orbitalPeriod)
+      (/ (/ $seconds 31557600) $orbitalPeriod)))
+(= (display $age $planet)(
+    println! ('It will be' $age 'on planet' $planet)
+)
+)
+(= (print $planet $seconds)(
+    let $age (ageOn $planet $seconds) (display $age $planet)
+)
+)
+
+!(print Mercury 1000000000)
+!(print Venus 3800)
+!(print Mars 99900)
+!(print Jupiter 76372)

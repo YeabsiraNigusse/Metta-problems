@@ -1,3 +1,15 @@
+(: Planet Type)
+(: Mercury Planet)
+(: Venus Planet)
+(: Earth Planet)
+(: Mars Planet)
+(: Jupiter Planet)
+(: Saturn Planet)
+(: Uranus Planet)
+(: Neptune Planet)
+
+(: ageOn (-> Planet Number Number))
+
 (Mercury 0.2408467)
 (Venus 0.61519726)
 (Earth 31557600)
